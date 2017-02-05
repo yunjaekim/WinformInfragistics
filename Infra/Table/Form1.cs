@@ -20,60 +20,54 @@ namespace Table
         private void InitForm(object sender, EventArgs e)
         {
             InitializeGrid();
-            InitializeCombo();
-        }
-
-        private void ultraGrid1_InitializeLayout(object sender, Infragistics.Win.UltraWinGrid.InitializeLayoutEventArgs e)
-        {
-            // ultraGrid & Column 0
-            e.Layout.Bands[0].Columns[0].ValueList = this.ultraCombo1;
+            CreateUnboundColumn();
         }
 
         private void InitializeGrid()
         {
-            DataTable table = new DataTable();
+            DataSet dataSet = new DataSet();
 
-            // col
-            for (int i = 0; i < 4; i++)
-            {
-                string colName = "Column" + (i + 1).ToString();
-                table.Columns.Add(colName, typeof(string));
+            DataTable personInfo = dataSet.Tables.Add("PersonInfo");
+            personInfo.Columns.Add("Index",     typeof(int));
+            personInfo.Columns.Add("Name",      typeof(string));
+            personInfo.Columns.Add("SnowId",    typeof(int));
 
-                //int    -> Type.GetType("System.Int32")
-                //Bool   -> Type.GetType("System.Boolean")
-            }
-            // row
-            for (int i = 0; i < 10; i++)
-            {
-                table.Rows.Add(new object[]
-                {
-                    (i + 1).ToString(),
-                    (i + 2).ToString(),
-                    (i + 3).ToString(),
-                    (i + 4).ToString(),
-                });
-            }
+            personInfo.Rows.Add(1, "jaekim1", 1);
+            personInfo.Rows.Add(2, "jaekim2", 2);
+            personInfo.Rows.Add(3, "jaekim3", 2);
+            personInfo.Rows.Add(4, "jaekim4", 2);
 
-            this.ultraGrid1.DataSource = table;
-            //return table;
+            DataTable snowInfo = dataSet.Tables.Add("SnowInfo");
+            snowInfo.PrimaryKey = new DataColumn[] { snowInfo.Columns.Add("Key", typeof(int)) };
+            snowInfo.Columns.Add("Value", typeof(string));
+
+            snowInfo.Rows.Add(1, "ski");
+            snowInfo.Rows.Add(2, "board");
+
+            dataSet.Relations.Add(
+                dataSet.Tables["SnowInfo"].Columns["Key"],
+                dataSet.Tables["PersonInfo"].Columns["SnowId"]);
+            
+            this.ultraGrid1.DataSource = dataSet;
+            
         }
-        private void InitializeCombo()
+        private void CreateUnboundColumn()
         {
-            DataTable table = new DataTable();
-            table.Columns.Add("key", Type.GetType("System.Int32"));
-            table.Columns.Add("Value", typeof(string));
+            
+            this.ultraGrid1.DisplayLayout.Bands[0].Columns["SnowId"].Hidden = true;
 
-            for (int i = 0; i < 3; i++)
-            {
-                table.Rows.Add(new object[] { i, i.ToString() });
+            this.ultraGrid1.DisplayLayout.Bands[0].Columns.Add("Snow");
+            foreach (Infragistics.Win.UltraWinGrid.UltraGridRow row in ultraGrid1.Rows)
+            {    
+                int snowID = (int)row.Cells["SnowId"].Value;
+                DataRow snowRow = (ultraGrid1.DataSource as DataSet).Tables["SnowInfo"].Rows.Find(snowID);
+                row.Cells["Snow"].Value = snowRow.ItemArray[1];
             }
+        }
+        
+        private void ultraGrid1_InitializeLayout(object sender, Infragistics.Win.UltraWinGrid.InitializeLayoutEventArgs e)
+        {
 
-            // 변경 내용 table에 적용.
-            table.AcceptChanges();
-
-            this.ultraCombo1.SetDataBinding(table, null);
-            this.ultraCombo1.ValueMember = "Key";
-            this.ultraCombo1.DisplayMember = "Value";
         }
     }
 }

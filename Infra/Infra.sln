@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Combo", "Combo\Combo.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Table", "Table\Table.csproj", "{1F44069A-88AF-4436-A43C-ADE93976E078}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GroupTableInGrid", "GroupTableInGrid", "{CE4591A7-6E27-4979-B0D3-714F04748DCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupTable", "GroupTable\GroupTable.csproj", "{B9D1C865-917F-4CEB-95DA-B671AD21373F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +35,10 @@ Global
 		{1F44069A-88AF-4436-A43C-ADE93976E078}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F44069A-88AF-4436-A43C-ADE93976E078}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F44069A-88AF-4436-A43C-ADE93976E078}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9D1C865-917F-4CEB-95DA-B671AD21373F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9D1C865-917F-4CEB-95DA-B671AD21373F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9D1C865-917F-4CEB-95DA-B671AD21373F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9D1C865-917F-4CEB-95DA-B671AD21373F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,5 +46,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{B38A2FE0-E384-4F10-9E01-A82F48BDDEAE} = {29D50F69-4832-4B89-84E0-8FB531A9FBA8}
 		{1F44069A-88AF-4436-A43C-ADE93976E078} = {20EBF1C0-E648-4521-B503-A08FA3C08C1E}
+		{B9D1C865-917F-4CEB-95DA-B671AD21373F} = {CE4591A7-6E27-4979-B0D3-714F04748DCB}
 	EndGlobalSection
 EndGlobal
