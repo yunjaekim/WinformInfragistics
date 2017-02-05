@@ -178,7 +178,7 @@
             this.ultraCombo1.DisplayLayout.ScrollBounds = Infragistics.Win.UltraWinGrid.ScrollBounds.ScrollToFill;
             this.ultraCombo1.DisplayLayout.ScrollStyle = Infragistics.Win.UltraWinGrid.ScrollStyle.Immediate;
             this.ultraCombo1.DisplayLayout.ViewStyleBand = Infragistics.Win.UltraWinGrid.ViewStyleBand.OutlookGroupBy;
-            this.ultraCombo1.Location = new System.Drawing.Point(422, 189);
+            this.ultraCombo1.Location = new System.Drawing.Point(459, 372);
             this.ultraCombo1.Name = "ultraCombo1";
             this.ultraCombo1.Size = new System.Drawing.Size(100, 25);
             this.ultraCombo1.TabIndex = 1;

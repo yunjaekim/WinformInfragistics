@@ -16,3 +16,6 @@ c:\users\yunjaekim\documents\visual studio 2015\Projects\Infragistics_TT\Infragi
 c:\users\yunjaekim\documents\visual studio 2015\Projects\Infragistics_TT\Infragistics_TT\obj\Debug\Infragistics_TT.exe.licenses
 c:\users\yunjaekim\documents\visual studio 2015\Projects\Infragistics_TT\Infragistics_TT\obj\Debug\Infragistics_TT.exe
 c:\users\yunjaekim\documents\visual studio 2015\Projects\Infragistics_TT\Infragistics_TT\obj\Debug\Infragistics_TT.pdb
+C:\Users\yunjaekim\Desktop\Infra\Infragistics_TT\Infragistics_TT\bin\Debug\Infragistics_TT.exe.config
+C:\Users\yunjaekim\Desktop\Infra\Infragistics_TT\Infragistics_TT\obj\Debug\Infragistics_TT.exe
+C:\Users\yunjaekim\Desktop\Infra\Infragistics_TT\Infragistics_TT\obj\Debug\Infragistics_TT.pdb
