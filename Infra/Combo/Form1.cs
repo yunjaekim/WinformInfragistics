@@ -38,9 +38,6 @@ namespace Combo
             {
                 string colName = "Column" + (i + 1).ToString();
                 table.Columns.Add(colName, typeof(string));
-
-                //int    -> Type.GetType("System.Int32")
-                //Bool   -> Type.GetType("System.Boolean")
             }
             // row
             for (int i = 0; i < 10; i++)
@@ -55,7 +52,6 @@ namespace Combo
             }
 
             this.ultraGrid1.DataSource = table;
-            //return table;
         }
         private void InitializeCombo()
         {
@@ -72,8 +68,8 @@ namespace Combo
             table.AcceptChanges();
 
             this.ultraCombo1.SetDataBinding(table, null);
-            this.ultraCombo1.ValueMember = "Key";
-            this.ultraCombo1.DisplayMember = "Value";
+            this.ultraCombo1.ValueMember    = "Key";
+            this.ultraCombo1.DisplayMember  = "Value";
         }
     }
 }

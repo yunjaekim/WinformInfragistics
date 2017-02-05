@@ -29,11 +29,11 @@ namespace GroupTable
             DataSet dataSet = new DataSet();
 
             DataTable table = new DataTable();
-            table.Columns.Add("Index", typeof(int));
-            table.Columns.Add("X", typeof(int));
-            table.Columns.Add("Y", typeof(int));
-            table.Columns.Add("R", typeof(int));
-            table.Columns.Add("Z", typeof(int));
+            table.Columns.Add("Index",  typeof(int));
+            table.Columns.Add("X",      typeof(int));
+            table.Columns.Add("Y",      typeof(int));
+            table.Columns.Add("R",      typeof(int));
+            table.Columns.Add("Z",      typeof(int));
 
             for (int i = 1; i < 10; i++)
             {
@@ -41,7 +41,7 @@ namespace GroupTable
             }
 
             DataTable childTable = new DataTable();
-            childTable.Columns.Add("key", typeof(int));
+            childTable.Columns.Add("key",   typeof(int));
             childTable.Columns.Add("value", typeof(int));
 
             for (int i = 1; i < 10; i++)
