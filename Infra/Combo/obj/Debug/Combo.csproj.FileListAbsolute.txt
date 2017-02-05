@@ -1,0 +1,21 @@
+C:\Users\yunjaekim\Documents\Visual Studio 2015\Projects\Infra\Combo\bin\Debug\Combo.exe.config
+C:\Users\yunjaekim\Documents\Visual Studio 2015\Projects\Infra\Combo\bin\Debug\Combo.exe
+C:\Users\yunjaekim\Documents\Visual Studio 2015\Projects\Infra\Combo\bin\Debug\Combo.pdb
+C:\Users\yunjaekim\Documents\Visual Studio 2015\Projects\Infra\Combo\obj\Debug\Combo.csprojResolveAssemblyReference.cache
+C:\Users\yunjaekim\Documents\Visual Studio 2015\Projects\Infra\Combo\obj\Debug\Combo.Properties.Resources.resources
+C:\Users\yunjaekim\Documents\Visual Studio 2015\Projects\Infra\Combo\obj\Debug\Combo.csproj.GenerateResource.Cache
+C:\Users\yunjaekim\Documents\Visual Studio 2015\Projects\Infra\Combo\obj\Debug\Combo.exe
+C:\Users\yunjaekim\Documents\Visual Studio 2015\Projects\Infra\Combo\obj\Debug\Combo.pdb
+C:\Users\yunjaekim\Documents\Visual Studio 2015\Projects\Infra\Combo\bin\Debug\Infragistics4.Shared.v16.2.dll
+C:\Users\yunjaekim\Documents\Visual Studio 2015\Projects\Infra\Combo\bin\Debug\Infragistics4.Win.Misc.v16.2.dll
+C:\Users\yunjaekim\Documents\Visual Studio 2015\Projects\Infra\Combo\bin\Debug\Infragistics4.Win.UltraWinGrid.v16.2.dll
+C:\Users\yunjaekim\Documents\Visual Studio 2015\Projects\Infra\Combo\bin\Debug\Infragistics4.Win.v16.2.dll
+C:\Users\yunjaekim\Documents\Visual Studio 2015\Projects\Infra\Combo\bin\Debug\Infragistics4.Shared.v16.2.xml
+C:\Users\yunjaekim\Documents\Visual Studio 2015\Projects\Infra\Combo\bin\Debug\Infragistics4.Win.Misc.v16.2.xml
+C:\Users\yunjaekim\Documents\Visual Studio 2015\Projects\Infra\Combo\bin\Debug\Infragistics4.Win.UltraWinGrid.v16.2.xml
+C:\Users\yunjaekim\Documents\Visual Studio 2015\Projects\Infra\Combo\bin\Debug\Infragistics4.Win.v16.2.xml
+C:\Users\yunjaekim\Documents\Visual Studio 2015\Projects\Infra\Combo\obj\Debug\Combo.Form1.resources
+C:\Users\yunjaekim\Documents\Visual Studio 2015\Projects\Infra\Combo\obj\Debug\Combo.exe.licenses
+C:\Users\yunjaekim\Desktop\Infra\Infra\Combo\bin\Debug\Combo.exe.config
+C:\Users\yunjaekim\Desktop\Infra\Infra\Combo\obj\Debug\Combo.exe
+C:\Users\yunjaekim\Desktop\Infra\Infra\Combo\obj\Debug\Combo.pdb
